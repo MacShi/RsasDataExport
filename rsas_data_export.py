@@ -17,11 +17,11 @@ def score2risk(score:float)->str:
         return "中"
     else:
         return "低"
-def parseXml(path:str)->list:
+def parseXml(path:str):
     '''
 
     :param path: xml文件路径
-    :return: 返回
+    :return: 无返回
     '''
     parser = etree.XMLParser(encoding="utf-8")
     xml = etree.parse(path,parser=parser)
